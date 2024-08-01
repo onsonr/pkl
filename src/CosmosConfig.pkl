@@ -1,6 +1,5 @@
 module Chain
 
-import "TomlRenderer.pkl"
 
 version = "0.38.5"
 
@@ -139,6 +138,3 @@ namespace = "cometbft"
 }
 
 
-output {
-  renderer = new toml.Renderer {}
-}

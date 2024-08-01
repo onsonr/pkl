@@ -1,6 +1,5 @@
 module Chain
 
-import "TomlRenderer.pkl"
 
 `minimum-gas-prices` = "0stake"
 `query-gas-limit` = "0"
@@ -73,6 +72,4 @@ mempool = new {
 `max-txs` = 5000
 }
 
-output {
-  renderer = new toml.Renderer {}
-}
+
