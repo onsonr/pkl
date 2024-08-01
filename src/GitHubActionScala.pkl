@@ -1,0 +1,22 @@
+module GitHubActionScala
+
+import "GitHubAction.pkl"
+import "GitHubActionJava.pkl"
+
+function sbtTestSteps(taskString: String(!isEmpty)?, workingDirectory: String?, javaVersion: String?): Listing<GitHubAction.Step> = new {
+  new {
+    uses = "actions/checkout@v4"
+  }
+
+  GitHubActionJava.setupJava(null, javaVersion, "sbt")
+
+  new {
+    run = "sbt \(taskString ?? "test")"
+    `working-directory` = workingDirectory
+  }
+}
+
+function sbtTestJob(taskString: String(!isEmpty)?, workingDirectory: String?, javaVersion: String?): GitHubAction.Job = new {
+  `runs-on` = "ubuntu-latest"
+  steps = sbtTestSteps(taskString, workingDirectory, javaVersion)
+}

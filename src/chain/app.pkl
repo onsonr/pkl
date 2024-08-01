@@ -1,4 +1,4 @@
-import "./toml.pkl"
+import "../ext/toml.pkl"
 
 `minimum-gas-prices` = "0stake"
 `query-gas-limit` = "0"

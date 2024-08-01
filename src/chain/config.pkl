@@ -1,4 +1,4 @@
-import "./toml.pkl"
+import "../ext/toml.pkl"
 
 version = "0.38.5"
 
