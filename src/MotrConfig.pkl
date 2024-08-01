@@ -10,37 +10,37 @@ class AppConfig {
 class BitcoinConfig {
   chainId: String 
   valApiUri: String
-  valRpcUri: String
-  valGrpcUri: String
+  valRpcUri: String?
+  valGrpcUri: String?
 }
 
 class CloudflareConfig {
-  assetsBucket: String
-  globalDatabase: String
+  assetsBucket: String?
+  globalDatabase: String?
 }
 
 class EthereumConfig {
   chainId: String 
   valApiUri: String
-  valRpcUri: String
-  valGrpcUri: String
+  valRpcUri: String?
+  valGrpcUri: String?
 }
 
 class IpfsConfig {
   resolverUri: String
-  apiUri: String
+  apiUri: String?
 }
 
 class SonrConfig {
   chainId: String 
   valApiUri: String
-  valRpcUri: String
-  valGrpcUri: String
+  valRpcUri: String?
+  valGrpcUri: String?
 }
 
 app : AppConfig
-bitcoin: BitcoinConfig
-cloudflare: CloudflareConfig
-ethereum: EthereumConfig
-ipfs: IpfsConfig
-sonr: SonrConfig
+bitcoin: BitcoinConfig?
+cloudflare: CloudflareConfig?
+ethereum: EthereumConfig?
+ipfs: IpfsConfig?
+sonr: SonrConfig?

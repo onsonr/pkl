@@ -6,7 +6,7 @@ type BitcoinConfig struct {
 
 	ValApiUri string `pkl:"valApiUri"`
 
-	ValRpcUri string `pkl:"valRpcUri"`
+	ValRpcUri *string `pkl:"valRpcUri"`
 
-	ValGrpcUri string `pkl:"valGrpcUri"`
+	ValGrpcUri *string `pkl:"valGrpcUri"`
 }

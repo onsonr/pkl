@@ -2,7 +2,7 @@
 package motrconfig
 
 type CloudflareConfig struct {
-	AssetsBucket string `pkl:"assetsBucket"`
+	AssetsBucket *string `pkl:"assetsBucket"`
 
-	GlobalDatabase string `pkl:"globalDatabase"`
+	GlobalDatabase *string `pkl:"globalDatabase"`
 }

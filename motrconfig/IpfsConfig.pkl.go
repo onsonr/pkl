@@ -4,5 +4,5 @@ package motrconfig
 type IpfsConfig struct {
 	ResolverUri string `pkl:"resolverUri"`
 
-	ApiUri string `pkl:"apiUri"`
+	ApiUri *string `pkl:"apiUri"`
 }
