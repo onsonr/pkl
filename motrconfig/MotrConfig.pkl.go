@@ -7,7 +7,11 @@ import (
 	"github.com/apple/pkl-go/pkl"
 )
 
-type MotrConfig struct{}
+type MotrConfig struct {
+	App *AppConfig `pkl:"app"`
+
+	Cloudflare *CloudflareConfig `pkl:"cloudflare"`
+}
 
 // LoadFromPath loads the pkl module at the given path and evaluates it into a MotrConfig
 func LoadFromPath(ctx context.Context, path string) (ret *MotrConfig, err error) {

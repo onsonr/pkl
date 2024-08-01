@@ -2,5 +2,5 @@
 package motrconfig
 
 type AppConfig struct {
-	ChainId string `pkl:"chainId"`
+	Domain string `pkl:"domain"`
 }
