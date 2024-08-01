@@ -1,3 +1,5 @@
+module Synapse
+
 version = 2
 
 global = new {

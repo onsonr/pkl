@@ -1,4 +1,6 @@
-import "../ext/toml.pkl"
+module Chain
+
+import "toml.pkl"
 
 `minimum-gas-prices` = "0stake"
 `query-gas-limit` = "0"

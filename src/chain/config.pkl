@@ -1,4 +1,6 @@
-import "../ext/toml.pkl"
+module Chain
+
+import "toml.pkl"
 
 version = "0.38.5"
 
