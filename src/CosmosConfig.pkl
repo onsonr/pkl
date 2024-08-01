@@ -1,6 +1,6 @@
 module Chain
 
-import "toml.pkl"
+import "TomlRenderer.pkl"
 
 version = "0.38.5"
 
