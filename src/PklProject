@@ -6,11 +6,11 @@ package {
     "James Ward <james@jamesward.com>"
   }
   version = read?("env:VERSION")?.replaceFirst("\(name)@", "") ?? "0.0.1-SNAPSHOT"
-  baseUri = "package://jamesward.github.com/pklgha"
-  packageZipUrl = "https://github.com/jamesward/pklgha/releases/download/\(name)@\(version)/\(name)@\(version).zip"
-  sourceCode = "https://github.com/jamesward/pklgha"
+  baseUri = "package://onsonr.github.com/pkljar"
+  packageZipUrl = "https://github.com/onsonr/pkljar/releases/download/\(name)@\(version)/\(name)@\(version).zip"
+  sourceCode = "https://github.com/onsonr/pkljar"
   sourceCodeUrlScheme = "\(sourceCode)/blob/\(name)@\(version)%{path}#L%{line}-L%{endLine}"
-  documentation = "https://jamesward.github.io/pklgha"
+  documentation = "https://onsonr.github.io/pkljar"
   license = "Apache-2.0"
   description = """
     Pkl Modules for GitHub Actions
