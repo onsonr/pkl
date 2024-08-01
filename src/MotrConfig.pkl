@@ -1,0 +1,27 @@
+module MotrConfig
+
+class AppConfig {
+  chainId: String 
+}
+
+class CloudflareConfig {
+  assetsBucket: String
+  globalDatabase: String
+}
+
+class Explorer {
+  app: AppConfig
+  cloudflare: CloudflareConfig
+}
+
+class WebAuth {
+  app: AppConfig
+  cloudflare: CloudflareConfig
+}
+
+class Worker {
+  app: AppConfig
+  cloudflare: CloudflareConfig
+}
+
+
