@@ -10,7 +10,15 @@ import (
 type MotrConfig struct {
 	App *AppConfig `pkl:"app"`
 
+	Bitcoin *BitcoinConfig `pkl:"bitcoin"`
+
 	Cloudflare *CloudflareConfig `pkl:"cloudflare"`
+
+	Ethereum *EthereumConfig `pkl:"ethereum"`
+
+	Ipfs *IpfsConfig `pkl:"ipfs"`
+
+	Sonr *SonrConfig `pkl:"sonr"`
 }
 
 // LoadFromPath loads the pkl module at the given path and evaluates it into a MotrConfig
