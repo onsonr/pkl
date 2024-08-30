@@ -1,18 +1,18 @@
 amends "pkl:Project"
 
 package {
-  name = "pkljar"
+  name = "types"
   authors {
     "Prad Nukala <root@pradn.uk>"
   }
   version = read?("env:VERSION")?.replaceFirst("\(name)@", "") ?? "0.0.1-SNAPSHOT"
-  baseUri = "package://onsonr.github.com/pkljar"
-  packageZipUrl = "https://github.com/onsonr/pkljar/releases/download/\(name)@\(version)/\(name)@\(version).zip"
-  sourceCode = "https://github.com/onsonr/pkljar"
+  baseUri = "package://onsonr.github.com/pkl"
+  packageZipUrl = "https://github.com/onsonr/pkl/releases/download/\(name)@\(version)/\(name)@\(version).zip"
+  sourceCode = "https://github.com/onsonr/pkl"
   sourceCodeUrlScheme = "\(sourceCode)/blob/\(name)@\(version)%{path}#L%{line}-L%{endLine}"
-  documentation = "https://onsonr.github.io/pkljar"
+  documentation = "https://onsonr.github.io/pkl"
   license = "Apache-2.0"
   description = """
-    Pkl Modules for GitHub Actions
+    PKL Models and Types for the Sonr Network
   """
 }
