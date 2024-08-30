@@ -1,7 +1,7 @@
 "on":
   push:
     tags:
-      - "pkljar@*"
+      - "types@*"
 jobs:
   build-and-upload:
     runs-on: ubuntu-latest
