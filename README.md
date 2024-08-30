@@ -6,7 +6,11 @@
 
 ## Overview
 
-This repository contains configuration files and structures for the Motr Network, defined using the [PKL (Property Knowledge Language) by Apple](https://pkl-lang.org). It provides a robust and type-safe way to manage configuration for various components of the Motr ecosystem.
+This repository contains configuration files and structures for the Sonr Network,
+defined using the [PKL (Property Knowledge Language) by Apple](https://pkl-lang.org).
+
+It provides a robust and type-safe way to manage configuration for various
+components of the Sonr ecosystem.
 
 ## Features
 
@@ -24,5 +28,5 @@ This repository contains configuration files and structures for the Motr Network
 
 ## Usage
 
-The configuration structures in this repository can be loaded and used in Golang applications. For example:
-
+The configuration structures in this repository can be loaded
+and used in Golang applications.
