@@ -30,3 +30,8 @@ components of the Sonr ecosystem.
 
 The configuration structures in this repository can be loaded
 and used in Golang applications.
+
+```pkl
+import
+
+```
