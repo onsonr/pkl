@@ -5,7 +5,7 @@
     "init_hook": [],
     "scripts": {
       "gen": [
-        "pkl-gen-go src/MotrConfig.pkl --base-path github.com/onsonr/pkl"
+        "pkl-gen-go pkl/MotrConfig.pkl --base-path github.com/onsonr/pkl"
       ],
       "build": ["./gradlew makePackages"]
     }
