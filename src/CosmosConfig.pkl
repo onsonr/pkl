@@ -1,5 +1,7 @@
 module CosmosConfig
 
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.toml@1.0.0#/toml.pkl"
+
 class Chain {
   version: String = "0.38.5"
   proxy_app: String = "tcp://127.0.0.1:26658"
@@ -144,4 +146,9 @@ class Instrumentation {
   prometheus_listen_addr: String = ":26660"
   max_open_connections: Int = 3
   namespace: String = "cometbft"
+}
+
+
+output {
+  renderer = new toml.Renderer {}
 }

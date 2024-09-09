@@ -1,5 +1,7 @@
 module CosmosApp
 
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.toml@1.0.0#/toml.pkl"
+
 class Chain {
   `minimum-gas-prices`: String = "0stake"
   `query-gas-limit`: String = "0"
@@ -80,4 +82,8 @@ class Abci {
 
 class Mempool {
   `max-txs`: Int = 5000
+}
+
+output {
+  renderer = new toml.Renderer {}
 }
